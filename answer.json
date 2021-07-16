@@ -1,0 +1,23 @@
+{
+  "update_id": 561640503,
+  "message": {
+    "message_id": 110,
+    "from": {
+      "id": 533539381,
+      "is_bot": false,
+      "first_name": "Сергей",
+      "last_name": "Яворский",
+      "username": "Ysooin",
+      "language_code": "en"
+    },
+    "chat": {
+      "id": 533539381,
+      "first_name": "Сергей",
+      "last_name": "Яворский",
+      "username": "Ysooin",
+      "type": "private"
+    },
+    "date": 1626468972,
+    "text": "я"
+  }
+}

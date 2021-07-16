@@ -36,9 +36,9 @@ def generate_pages_urls(url):
 
 def get_content(url):
     soup = soup_item(url)
-    # prod_extra_table = soup.find('table', class_='prod_extra_table')
-    # rows = prod_extra_table.find_all("tr")
-    # d = {row.get_text(strip=True).split(':')[0] : row.get_text(strip=True).split(':')[1]  for row in rows}
+    prod_extra_table = soup.find('table', class_='prod_extra_table')
+    rows = prod_extra_table.find_all("tr")
+    d = {row.get_text(strip=True).split(':')[0] : row.get_text(strip=True).split(':')[1]  for row in rows}
     pb_stock = soup.find("span", class_='red')
     product_code = soup.find('div', class_='product_code').get_text(strip=True).split(':')[1] #Получаем код товара
     price = soup.find('div', class_='pb_price').get_text().split(' ')[0].strip()
