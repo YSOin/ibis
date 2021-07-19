@@ -1,14 +1,14 @@
 import requests
 import json
 
+
 from flask import jsonify
 from flask import Flask
 from flask import request
 from parse import *
+from tg_token import token
 
-#https://api.telegram.org/bot1946897508:AAF-jzrzomGbn6GYB82aC653sFrrCTJ1F30/getUpdates
 app = Flask(__name__)
-token = '1946897508:AAF-jzrzomGbn6GYB82aC653sFrrCTJ1F30'
 
 def generate_bot_method(token, method_variable):
     URL = f'https://api.telegram.org/bot{token}/{method_variable}'
@@ -44,8 +44,6 @@ def index():
         write_json(r)
         return jsonify()
     return '<h1>Hello Main</h1>'
-# def main():
-#     pass    
     
 
 
